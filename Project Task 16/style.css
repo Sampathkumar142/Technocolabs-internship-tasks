@@ -1,0 +1,94 @@
+/* Universal Styles */
+body {
+  margin: 0px;
+  background-color: WhiteSmoke;
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+}
+
+.secondary-background {
+  background-color: Snow;
+}
+
+.tagline {
+  font-family: 'Quicksand', sans-serif;
+  color: LightSlateGrey;
+  line-height: 125px;
+}
+
+/* Header */
+h1 {
+  margin: 0;
+  background-color: SkyBlue;
+  line-height: 100px;
+  color: Khaki;
+}
+
+h2 {
+  margin: 10px;
+}
+
+/* App Container */
+.container {
+  border: 2px solid Snow;
+  display: flex; /* Task 1: Set display property to flex */
+}
+
+/* To Do Section */
+.week {
+  display: flex; /* Task 1: Set display property to flex */
+  flex-direction: column; /* Task 10: Set flex-direction to column */
+  flex-grow: 3; /* Task 5: Set flex-grow value to 3 */
+}
+
+.row {
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap; /* Task 11: Set flex-wrap property to wrap */
+  justify-content: space-around; /* Task 12: Set justify-content property to space-around */
+  align-items: center; /* Task 13: Set align-items property to center */
+}
+
+.square {
+  width: 125px;
+  height: 125px;
+  padding: 10px;
+  display: flex; /* Task 2: Set display property to flex */
+  justify-content: center; /* Task 12: Set justify-content property to center */
+  align-items: center; /* Task 13: Set align-items property to center */
+}
+
+.day.square {
+  background-color: SkyBlue;
+  border: 1px solid white;
+}
+
+.task.square {
+  background-color: Khaki;
+  border: 1px solid white;
+}
+
+.task p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* Reminders */
+.reminders {
+  background-color: Khaki;
+  flex-grow: 2; /* Task 5: Set flex-grow property to 2 */
+}
+
+.reminders h3 {
+  width: 100%;
+  margin: 10px;
+  color: black;
+  line-height: 90px;
+  font-size: 24px;
+}
+
+/* Footer */
+footer {
+  font-size: 24px;
+}

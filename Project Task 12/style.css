@@ -1,0 +1,90 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333333;
+    position: fixed; /* Task 1: Set position to fixed to make it stick to the top of the window */
+    width: 100%; /* Task 2: Stretch the header across its entire parent element */
+    z-index: 1000; /* Task 5: Set a higher z-index to make it visible */
+  }
+  
+  nav {
+    margin: 0;
+    padding: 20px 0;
+  }
+  
+  nav li {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    display: inline-block; /* Task 3: Display list items horizontally */
+    width: 80px; /* Task 4: Set the width of the list items to 80 pixels */
+  }
+  
+  main {
+    text-align: center;
+    position: relative; /* Task 6: Set position to relative */
+    top: 80px; /* Task 6: Offset main by 80 pixels from the top */
+  }
+  
+  .container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+  }
+  
+  .jumbotron {
+    height: 800px;
+    background-image: url("http://s3.amazonaws.com/codecademy-content/projects/broadway/bg.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .btn-main {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    padding: 16px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .supporting .col {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: inline-block; /* Task 8: Allow .supporting .col elements to appear horizontally */
+    width: 200px; /* Task 8: Set the width of .supporting .col elements to 200 pixels */
+    height: 200px; /* Task 8: Set the height of .supporting .col elements to 200 pixels */
+  }
+  
+  @media (max-width: 500px) {
+    main h1 {
+      font-size: 50px;
+      padding: 0 40px;
+    }
+  
+    .supporting .col {
+      width: 100%;
+    }
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+  }
+  
+  footer p {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
